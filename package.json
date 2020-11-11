@@ -1,0 +1,12 @@
+{
+  "name": "react-native-multiple-select",
+  "version": "1.0.0",
+  "description": "component which, based upon an array of strings, generate a list of items which are checkable",
+  "main": "index.js",
+  "author": "Gabriel Nadaleti",
+  "license": "MIT",
+  "dependencies": {
+    "react-native": "^0.63.3",
+    "react-native-elements": "^3.0.0-alpha.1"
+  }
+}
