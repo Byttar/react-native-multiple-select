@@ -1,11 +1,16 @@
 {
   "name": "@mindconsulting/react-native-multiple-select",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "component which, based upon an array of strings, generate a list of items which are checkable",
   "main": "src/index.js",
   "author": "Gabriel Nadaleti",
   "license": "MIT",
   "types": "src/index.d.ts",
+  "homepage": "https://github.com/Byttar/react-native-multiple-select",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Byttar/react-native-multiple-select"
+  },
   "keywords": ["react-native", "multiple-select", "multiselect"],
   "dependencies": {
     "prop-types": "^15.7.2",

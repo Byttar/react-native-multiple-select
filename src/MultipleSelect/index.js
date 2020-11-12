@@ -24,7 +24,7 @@ const setListName = (previousState, index, name) => {
     return previousState;
 }
 
-const MultipleSelect = ({items, labelContainerStyle, labelStyle, labelTextStyle, onModalClosed, value}) => {
+const MultipleSelect = ({items, labelContainerStyle, labelStyle, labelTextStyle, onModalClosed, value, closeText, addLabelText}) => {
   const [get_checkboxstate, set_checkboxstate] = useState([]);
   const [get_stringmap, set_stringmap] = useState({});
 	const [visible, setVisible] = useState(false);
@@ -52,7 +52,7 @@ const MultipleSelect = ({items, labelContainerStyle, labelStyle, labelTextStyle,
           <TouchableOpacity onPress={() => {
                       close();
                   }}>
-                <Text style={styles.closeStyle}>Voltar</Text>
+                <Text style={styles.closeStyle}>{closeText || Close}</Text>
             </TouchableOpacity>
             <ScrollView style={styles.modalContent}>
             {items.map((name, index) => {
@@ -83,7 +83,7 @@ const MultipleSelect = ({items, labelContainerStyle, labelStyle, labelTextStyle,
                     <Text style={{...styles.labelTextStyle, ...labelTextStyle}}>{x}</Text>
                 </View>         
             }) : 
-            <Text>Clique aqui para adicionar</Text>
+            <Text>{addLabelText || "Click here to add a item"}</Text>
         }
       </TouchableOpacity>
     </View>

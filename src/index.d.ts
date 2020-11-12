@@ -14,6 +14,14 @@ export interface MultiSelectProps {
     labelContainerStyle?: ViewStyle,
     labelTextStyle?: TextStyle,
     /**
+     * Text of the close button shown in the modal top right corner when it's visible.
+     */
+    closeText?: string,
+    /**
+     * Text shown when there's no item selected. 
+     */
+    addLabelText?: string,
+    /**
      * Callback for when the modal is closed. This is called when you press the back button or press the top close button
      * This action will update state
      */
